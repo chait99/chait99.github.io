@@ -54,21 +54,20 @@
 
 				<!-- Main -->
 					<div id="main">
-
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>University of Illinois Urbana-Champaign</h2>
-                                        <div><h4>Bachelor of Science (B.S.), Computer Science</h4><h6><i>2017 - 2021</i></h6></div>
-                                        
-									</header>
-									<p><b>Technical Coursework: </b>Discrete Structures, Mobile Development, Ethical & Professional Issues, Computer Architecture, Data Structures, System Programming, Introduction to Algorithms & Models of Computation, Programming Languages & Compilers, Text Information Systems, Statistics and Probability 1, Data Visualization, Database Systems, User Interface Design, Audio Computing Lab, Principles of Business Communication, High-Tech Venture Marketing</p>
-								</div>
-							</section>
-
 						<!-- Two -->
 							<section id="two" class="spotlights">
+								<section>
+									<img src="images/uiuclogo.jpg" alt="" data-position="top center" class="image" />
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h2>University of Illinois Urbana-Champaign</h2>
+											</header>
+											<h4>Bachelor of Science (B.S.), Computer Science</h4><h6><i>2017 - 2021</i></h6></h4>
+											<p><b>Technical Coursework: </b>Discrete Structures, Mobile Development, Ethical & Professional Issues, Computer Architecture, Data Structures, System Programming, Introduction to Algorithms & Models of Computation, Programming Languages & Compilers, Text Information Systems, Statistics and Probability 1, Data Visualization, Database Systems, User Interface Design, Audio Computing Lab, Principles of Business Communication, High-Tech Venture Marketing</p>
+										</div>
+									</div>
+								</section>
 								<section>
 									<a href="https://www.credly.com/badges/1cfe2f49-847e-429c-98ed-83d61e4fa860/public_url" target="_blank" class="image">
 										<img src="images/aws-cert-image.png" alt="" data-position="center center" />
@@ -146,20 +145,20 @@
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" readonly/>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text" name="email" id="email" readonly/>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
+											<textarea name="message" id="message" rows="6" readonly></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
+										<li><input type="submit" value="Send Message" class="primary" disabled/></li>
+										<li><input type="reset" value="Clear" disabled/></li>
 									</ul>
 								</form>
 							</section>

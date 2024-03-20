@@ -4,6 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
 <html>
 	<head>
 		<title>Chaitanya Jujjavarapu</title>
@@ -14,7 +15,6 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -45,7 +45,7 @@
 								<h1>Hello, my name is Chaitanya Jujjavarapu</h1>
 							</header>
 							<!-- <div class="content"> -->
-							<p><i>Dynamic and results-oriented Software Engineer with a proven track record of driving innovation and delivering impactful solutions in the technology sector through 3 years of experience as a full time employee and 2.5 years as an intern. Proficient in Java, Python, React.js, and Go, with extensive experience leveraging a wide array of Amazon Web Services (AWS) products such as ECS, EC2 and Fargate instances, Lambdas, and DynamoDB. A collaborative leader with a passion for knowledge sharing, demonstrated through the organization of a weekly forum to facilitate peer learning, the delivery of engaging technical presentations, and mentoring multiple interns and new hires. Seeking to leverage technical expertise and leadership skills to drive innovation and deliver value in a dynamic software engineering role.</i></p>
+							<p><i>I am a dynamic and results-oriented Software Engineer with a proven track record of driving innovation and delivering impactful solutions in the technology sector through 3 years of experience as a full time employee and 2.5 years as an intern. I am proficient in Java, Python, React.js, and Go, with extensive experience leveraging a wide array of Amazon Web Services (AWS) products such as ECS, EC2 and Fargate instances, Lambdas, and DynamoDB. I am a collaborative leader with a passion for knowledge sharing, demonstrated through the organization of a weekly forum to facilitate peer learning, the delivery of engaging technical presentations, and mentoring multiple interns and new hires. I am seeking to leverage technical expertise and leadership skills to drive innovation and deliver value in a dynamic software engineering role.</i></p>
 							<!-- </div> -->
 							<p><i><b>Skills: </b> Python, Java, Go, C++, Amazon Web Services (AWS), React.js, C#, d3.js, Tableau, HTML, CSS, SQL, Music Production</i></p>
 						</div>
@@ -125,27 +125,70 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="POST" class="input-group" action="sendemail.php">
 									<div class="fields">
+										<!-- <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?> -->
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" readonly/>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text" name="email" id="email" readonly />
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
+											<textarea name="message" id="message" rows="6" readonly></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
+										<li><input type="submit" value="Send Message" class="primary" disabled/></li>
+										<li><input type="reset" value="Clear" disabled/></li>
 									</ul>
 								</form>
 							</section>
+
+							<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script> -->
+							<!-- <script>
+								const constraints = {
+									name: {
+										presence: { allowEmpty: false }
+									},
+									email: {
+										presence: { allowEmpty: false },
+										email: true
+									},
+									message: {
+										presence: { allowEmpty: false }
+									}
+								};
+
+								const form = document.getElementById('contact-form');
+								form.addEventListener('submit', function (event) {
+
+									const formValues = {
+										name: form.elements.name.value,
+										email: form.elements.email.value,
+										message: form.elements.message.value
+									};
+
+
+									const errors = validate(formValues, constraints);
+									if (errors) {
+										event.preventDefault();
+										const errorMessage = Object
+											.values(errors)
+											.map(function (fieldValues) {
+												return fieldValues.join(', ')
+											})
+											.join("\n");
+
+										alert(errorMessage);
+									}
+								}, false);
+							</script> -->
+
+
 							<section class="split">
 								<section>
 									<div class="contact-method">
